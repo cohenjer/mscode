@@ -1,0 +1,7 @@
+mscode
+======
+
+.. toctree::
+   :maxdepth: 4
+
+   mscode

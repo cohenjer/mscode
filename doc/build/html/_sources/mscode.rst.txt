@@ -1,0 +1,39 @@
+mscode package
+==============
+
+Submodules
+----------
+
+mscode.methods module
+------------------------
+
+.. automodule:: mscode.methods
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+mscode.utils module
+-----------------------
+
+.. automodule:: mscode.utils
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+mscode.xp module
+--------------------
+
+.. automodule:: mscode.xp
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+
+
+Module contents
+---------------
+
+.. automodule:: mscode
+   :members:
+   :undoc-members:
+   :show-inheritance:

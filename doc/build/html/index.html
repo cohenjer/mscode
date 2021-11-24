@@ -1,0 +1,772 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome to MScode’s documentation! &#8212; MScode package documentation</title>
+    
+  <link href="_static/css/theme.css" rel="stylesheet">
+  <link href="_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" href="_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+  <link rel="preload" as="script" href="_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/language_data.js"></script>
+    <script src="_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="#">
+      
+      
+      
+      <h1 class="site-logo" id="site-title">MScode package documentation</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Theme by the <a href="https://ebp.jupyterbook.org">Executable Book Project</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="_sources/index.rst.txt"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.rst</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/todo"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        
+        
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#">
+   Welcome to MScode’s documentation!
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#module-mscode.methods.algorithms">
+     Documentation for algorithms
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#module-mscode.methods.proxs">
+     Documentation for proximity operators
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#module-mscode.utils.generator">
+     Documentation for generating data
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#module-mscode.utils.utils">
+     Documentation for useful scripts
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#internal-links">
+   Internal links
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="welcome-to-mscode-s-documentation">
+<h1>Welcome to MScode’s documentation!<a class="headerlink" href="#welcome-to-mscode-s-documentation" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="module-mscode.methods.algorithms">
+<span id="documentation-for-algorithms"></span><h2>Documentation for algorithms<a class="headerlink" href="#module-mscode.methods.algorithms" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt id="mscode.methods.algorithms.admm_mix">
+<code class="sig-prename descclassname">mscode.methods.algorithms.</code><code class="sig-name descname">admm_mix</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">Y</span></em>, <em class="sig-param"><span class="n">D</span></em>, <em class="sig-param"><span class="n">B</span></em>, <em class="sig-param"><span class="n">k</span></em>, <em class="sig-param"><span class="n">X0</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">itermax</span><span class="o">=</span><span class="default_value">1000</span></em>, <em class="sig-param"><span class="n">tol</span><span class="o">=</span><span class="default_value">1e-06</span></em>, <em class="sig-param"><span class="n">verbose</span><span class="o">=</span><span class="default_value">True</span></em>, <em class="sig-param"><span class="n">rho</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#mscode.methods.algorithms.admm_mix" title="Permalink to this definition">¶</a></dt>
+<dd><p>Solves (approximatively, without guaranties) the mixed sparse coding problem using ADMM with hard thresholding as the proximity operator of the l0 sparsity constraint. The problem is formulated as</p>
+<blockquote>
+<div><p><span class="math notranslate nohighlight">\(\min_X\; \|Y - DXB\|_F^2  \; s.t.\;   \|X_i\|_0 \leq k\)</span></p>
+</div></blockquote>
+<p>where k is the maximal number of nonzeros per column of X.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>Y</strong> (<em>numpy array</em>) – input data, required</p></li>
+<li><p><strong>D</strong> (<em>numpy array</em>) – input dictionary (fat), required</p></li>
+<li><p><strong>B</strong> (<em>numpy array</em>) – input mixing matrix, required</p></li>
+<li><p><strong>k</strong> (<em>integer</em>) – sparsity level per column, thresholded at the end, required</p></li>
+<li><p><strong>rho</strong> (<em>float</em>) – augmented Lagrangian penality coefficient, by default it is set to ??</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><ul class="simple">
+<li><p><strong>X</strong> (<em>numpy array</em>) – estimated X</p></li>
+<li><p><strong>e</strong> (<em>list</em>) – fittings along iterations</p></li>
+<li><p><strong>support</strong> (<em>numpy array</em>) – the support of each column of X</p></li>
+</ul>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="mscode.methods.algorithms.brute_trick">
+<code class="sig-prename descclassname">mscode.methods.algorithms.</code><code class="sig-name descname">brute_trick</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">Y</span></em>, <em class="sig-param"><span class="n">D</span></em>, <em class="sig-param"><span class="n">B</span></em>, <em class="sig-param"><span class="n">k</span></em><span class="sig-paren">)</span><a class="headerlink" href="#mscode.methods.algorithms.brute_trick" title="Permalink to this definition">¶</a></dt>
+<dd><p>A brute force version of the pseudo_trick, for checking counter examples. Returns the error in the B domain.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="mscode.methods.algorithms.homp">
+<code class="sig-prename descclassname">mscode.methods.algorithms.</code><code class="sig-name descname">homp</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">Y</span></em>, <em class="sig-param"><span class="n">D</span></em>, <em class="sig-param"><span class="n">B</span></em>, <em class="sig-param"><span class="n">k</span></em>, <em class="sig-param"><span class="n">Xin</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">tol</span><span class="o">=</span><span class="default_value">1e-06</span></em>, <em class="sig-param"><span class="n">itermax</span><span class="o">=</span><span class="default_value">1000</span></em><span class="sig-paren">)</span><a class="headerlink" href="#mscode.methods.algorithms.homp" title="Permalink to this definition">¶</a></dt>
+<dd><p>Hierarchical Orthogonal Matching Pursuit for the mixed sparse coding
+problem. Computes k-sparse approximations of column sub-problems until
+convergence using OMP (modified) as a routine.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>Y</strong> (<em>numpy array</em>) – Input data, required</p></li>
+<li><p><strong>D</strong> (<em>numpy array</em>) – Input dictionary, required</p></li>
+<li><p><strong>B</strong> (<em>numpy array</em>) – Input mixing matrix, required</p></li>
+<li><p><strong>k</strong> (<em>int</em>) – Sparsity level, required</p></li>
+<li><p><strong>Xin</strong> (<em>numpy array</em><em> (</em><em>default: random</em><em>)</em>) – Initial X</p></li>
+<li><p><strong>itermax</strong> (<em>integer</em><em> (</em><em>default 1000</em><em>)</em>) – maximum number of proximal iterations</p></li>
+<li><p><strong>tol</strong> (<em>float</em><em> (</em><em>default 1e-6</em><em>)</em>) – relative error threshold for stopping the algorithm</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><ul class="simple">
+<li><p><strong>X</strong> (<em>numpy array</em>) – Final estimated X</p></li>
+<li><p><strong>err</strong> (<em>list</em>) – Error after each pass.</p></li>
+<li><p><strong>S</strong> (<em>numpy array</em>) – Support of the solution</p></li>
+</ul>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="mscode.methods.algorithms.iht_mix">
+<code class="sig-prename descclassname">mscode.methods.algorithms.</code><code class="sig-name descname">iht_mix</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">Y</span></em>, <em class="sig-param"><span class="n">D</span></em>, <em class="sig-param"><span class="n">B</span></em>, <em class="sig-param"><span class="n">k</span></em>, <em class="sig-param"><span class="n">X_in</span></em>, <em class="sig-param"><span class="n">tol</span><span class="o">=</span><span class="default_value">1e-06</span></em>, <em class="sig-param"><span class="n">itermax</span><span class="o">=</span><span class="default_value">1000</span></em>, <em class="sig-param"><span class="n">verbose</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">DtD</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">DtY</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">eta</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#mscode.methods.algorithms.iht_mix" title="Permalink to this definition">¶</a></dt>
+<dd><p>An adaptation of the (Extrapolated) Iterated Hard Thresholding Algorithm for the mixed sparse coding problem. At each iteration, a Nesterov Fast Gradient step is performed with projection on the set of columnwise k-sparse matrices.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>Y</strong> (<em>numpy array</em>) – input data, required</p></li>
+<li><p><strong>D</strong> (<em>numpy array</em>) – input dictionary (fat), required</p></li>
+<li><p><strong>B</strong> (<em>numpy array</em>) – input mixing matrix, required</p></li>
+<li><p><strong>k</strong> (<em>integer</em>) – Sparsity level, must be the number of terms in each subset of S (not checked)</p></li>
+<li><p><strong>Xin</strong> (<em>numpy array</em>) – Initial guess for solution X</p></li>
+<li><p><strong>itermax</strong> (<em>integer</em><em> (</em><em>default 1000</em><em>)</em>) – maximum number of proximal iterations</p></li>
+<li><p><strong>tol</strong> (<em>float</em><em> (</em><em>default 1e-6</em><em>)</em>) – relative error threshold for stopping the algorithm</p></li>
+<li><p><strong>verbose</strong> (<em>boolean</em><em> (</em><em>default True</em><em>)</em>) – Set to False to remove prints</p></li>
+<li><p><strong>eta</strong> (<em>float</em><em> (</em><em>default None</em><em>)</em>) – the stepsize for ISTA. If None, the Lipschitz constant is computed and used.</p></li>
+<li><p><strong>DtD</strong> (<em>numpy arrays</em>) – pre-computed cross products of the inputs if available.</p></li>
+<li><p><strong>DtY</strong> (<em>numpy arrays</em>) – pre-computed cross products of the inputs if available.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><ul class="simple">
+<li><p><strong>X</strong> (<em>numpy array</em>) – Solution of the mixed sparse coding problem with fixed column sparsity</p></li>
+<li><p><strong>err</strong> (<em>float</em>) – Reconstruction error / residuals.</p></li>
+<li><p><strong>support</strong> (<em>numpy array</em>) – the support of each column of X</p></li>
+</ul>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="mscode.methods.algorithms.ista">
+<code class="sig-prename descclassname">mscode.methods.algorithms.</code><code class="sig-name descname">ista</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">Y</span></em>, <em class="sig-param"><span class="n">D</span></em>, <em class="sig-param"><span class="n">B</span></em>, <em class="sig-param"><span class="n">lamb_rel</span></em>, <em class="sig-param"><span class="n">k</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">X0</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">itermax</span><span class="o">=</span><span class="default_value">1000</span></em>, <em class="sig-param"><span class="n">tol</span><span class="o">=</span><span class="default_value">1e-06</span></em>, <em class="sig-param"><span class="n">verbose</span><span class="o">=</span><span class="default_value">True</span></em>, <em class="sig-param"><span class="n">samereg</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">warning</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">DtD</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">DtY</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">DtYB</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">BtB</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">return_old</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">eta</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#mscode.methods.algorithms.ista" title="Permalink to this definition">¶</a></dt>
+<dd><p>Solves a simple convex relaxation of the mixed sparse coding problem using Fast Iterative Soft Thresholding (Block-Fista). Each columns has its own regularization parameter.
+The cost function is</p>
+<blockquote>
+<div><p><span class="math notranslate nohighlight">\(\frac{1}{2} \|Y - DXB^T \|_F^2 + \sum_i \lambda_i \|X_i\|_{1}\)</span></p>
+</div></blockquote>
+<p>where <span class="math notranslate nohighlight">\(\lambda_i = \lambda_{rel,i}\lambda_{\max,i}\)</span></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>Y</strong> (<em>numpy array</em>) – input data, required</p></li>
+<li><p><strong>D</strong> (<em>numpy array</em>) – input dictionary (fat), required</p></li>
+<li><p><strong>B</strong> (<em>numpy array</em>) – input mixing matrix, required</p></li>
+<li><p><strong>lamb_rel</strong> (<em>float</em><em> or </em><em>list of floats</em>) – ratio of lambda_max used as a regularization, required.
+If float is provided, the same regularization ratio is used in all columns.
+If list is provided, it must be of length X.shape[1] and provide regularization level for each columns.</p></li>
+<li><p><strong>k</strong> (<em>integer</em>) – sparsity level per column, thresholded at the end. Use None to ignore.</p></li>
+<li><p><strong>samereg</strong> (<em>boolean</em>) – if True, all lamb values are equal to lambda_max*lamb_rel, which yields the usual Lasso problem.</p></li>
+<li><p><strong>X0</strong> (<em>numpy array</em>) – initial estimation of X</p></li>
+<li><p><strong>itermax</strong> (<em>integer</em><em> (</em><em>default 1000</em><em>)</em>) – maximum number of proximal iterations</p></li>
+<li><p><strong>tol</strong> (<em>float</em><em> (</em><em>default 1e-6</em><em>)</em>) – relative error threshold for stopping the algorithm</p></li>
+<li><p><strong>verbose</strong> (<em>boolean</em><em> (</em><em>default True</em><em>)</em>) – Set to False to remove prints</p></li>
+<li><p><strong>warning</strong> (<em>boolean</em><em> (</em><em>default False</em><em>)</em>) – If True, will prompt a warning when the final estimation before debiaising is sparser than the desired sparsity level.</p></li>
+<li><p><strong>return_old</strong> (<em>boolean</em><em> (</em><em>default False</em><em>)</em>) – If True, adds a fith output which is the estimated X before debiaising</p></li>
+<li><p><strong>eta</strong> (<em>float</em><em> (</em><em>default None</em><em>)</em>) – the stepsize for ISTA. If None, the Lipschitz constant is computed and used.</p></li>
+<li><p><strong>DtD</strong> (<em>numpy arrays</em>) – pre-computed cross products of the inputs if available.</p></li>
+<li><p><strong>(</strong><strong>..</strong><strong>)</strong> (<em>BtB</em>) – pre-computed cross products of the inputs if available.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><ul class="simple">
+<li><p><strong>X</strong> (<em>numpy array</em>) – estimated X</p></li>
+<li><p><strong>e</strong> (<em>list</em>) – fittings along iterations</p></li>
+<li><p><strong>rec</strong> (<em>list</em>) – reconstruction errors along iterations</p></li>
+<li><p><strong>support</strong> (<em>numpy array</em>) – the support of each column of X</p></li>
+</ul>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="mscode.methods.algorithms.ista_mix">
+<code class="sig-prename descclassname">mscode.methods.algorithms.</code><code class="sig-name descname">ista_mix</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">Y</span></em>, <em class="sig-param"><span class="n">D</span></em>, <em class="sig-param"><span class="n">B</span></em>, <em class="sig-param"><span class="n">lamb_rel</span></em>, <em class="sig-param"><span class="n">k</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">X0</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">itermax</span><span class="o">=</span><span class="default_value">1000</span></em>, <em class="sig-param"><span class="n">tol</span><span class="o">=</span><span class="default_value">1e-06</span></em>, <em class="sig-param"><span class="n">verbose</span><span class="o">=</span><span class="default_value">True</span></em><span class="sig-paren">)</span><a class="headerlink" href="#mscode.methods.algorithms.ista_mix" title="Permalink to this definition">¶</a></dt>
+<dd><p>Solves the tighest convex relaxation of the mixed sparse coding problem using Fast Iterative Soft Thresholding (Fista).
+The cost function is</p>
+<blockquote>
+<div><p><span class="math notranslate nohighlight">\(\frac{1}{2} \|Y - DXB^T \|_F^2 + \lambda \|X\|_{1,1}\)</span></p>
+</div></blockquote>
+<p>where <span class="math notranslate nohighlight">\(\lambda = \lambda_{rel}\lambda_{\max}\)</span></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>Y</strong> (<em>numpy array</em>) – input data, required</p></li>
+<li><p><strong>D</strong> (<em>numpy array</em>) – input dictionary (fat), required</p></li>
+<li><p><strong>B</strong> (<em>numpy array</em>) – input mixing matrix, required</p></li>
+<li><p><strong>lamb_rel</strong> (<em>float</em>) – ratio of lambda_max used as a regularization, required</p></li>
+<li><p><strong>k</strong> (<em>integer</em>) – sparsity level per column, thresholded at the end</p></li>
+<li><p><strong>X0</strong> (<em>numpy array</em>) – initial estimation of X</p></li>
+<li><p><strong>itermax</strong> (<em>integer</em><em> (</em><em>default 1000</em><em>)</em>) – maximum number of proximal iterations</p></li>
+<li><p><strong>tol</strong> (<em>float</em><em> (</em><em>default 1e-6</em><em>)</em>) – relative error threshold for stopping the algorithm</p></li>
+<li><p><strong>verbose</strong> (<em>boolean</em><em> (</em><em>default True</em><em>)</em>) – Set to False to remove prints</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><ul class="simple">
+<li><p><strong>X</strong> (<em>numpy array</em>) – estimated X</p></li>
+<li><p><strong>e</strong> (<em>list</em>) – fittings along iterations</p></li>
+<li><p><strong>rec</strong> (<em>list</em>) – reconstruction errors along iterations</p></li>
+<li><p><strong>support</strong> (<em>numpy array</em>) – the support of each column of X</p></li>
+</ul>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="mscode.methods.algorithms.ista_nn">
+<code class="sig-prename descclassname">mscode.methods.algorithms.</code><code class="sig-name descname">ista_nn</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">Y</span></em>, <em class="sig-param"><span class="n">D</span></em>, <em class="sig-param"><span class="n">B</span></em>, <em class="sig-param"><span class="n">lamb_rel</span></em>, <em class="sig-param"><span class="n">k</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">X0</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">itermax</span><span class="o">=</span><span class="default_value">1000</span></em>, <em class="sig-param"><span class="n">tol</span><span class="o">=</span><span class="default_value">1e-06</span></em>, <em class="sig-param"><span class="n">verbose</span><span class="o">=</span><span class="default_value">True</span></em>, <em class="sig-param"><span class="n">samereg</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">return_old</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">DtD</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">DtY</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">DtYB</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">BtB</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">eta</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">warning</span><span class="o">=</span><span class="default_value">False</span></em><span class="sig-paren">)</span><a class="headerlink" href="#mscode.methods.algorithms.ista_nn" title="Permalink to this definition">¶</a></dt>
+<dd><p>Solves a simple convex relaxation of the mixed sparse coding problem using Fast Iterative Soft Thresholding (Fista) under nonnegativity constraints. Each columns has its own regularization parameter.
+The cost function is</p>
+<blockquote>
+<div><p><span class="math notranslate nohighlight">\(\frac{1}{2} \|Y - DXB^T \|_F^2 + \sum_i \lambda_i \|X_i\|_{1}\; s.t.\; X\geq 0\)</span></p>
+</div></blockquote>
+<p>where <span class="math notranslate nohighlight">\(\lambda_i = \lambda_{rel,i}\lambda_{\max,i}\)</span></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>Y</strong> (<em>numpy array</em>) – input data, required</p></li>
+<li><p><strong>D</strong> (<em>numpy array</em>) – input dictionary (fat), required</p></li>
+<li><p><strong>B</strong> (<em>numpy array</em>) – input mixing matrix, required</p></li>
+<li><p><strong>lamb_rel</strong> (<em>float</em><em> or </em><em>list of floats</em>) – ratio of lambda_max used as a regularization, required.
+If float is provided, the same regularization ratio is used in all columns.
+If list is provided, it must be of length X.shape[1] and provide regularization level for each columns.</p></li>
+<li><p><strong>k</strong> (<em>integer</em>) – sparsity level per column, thresholded at the end. Use None to ignore.</p></li>
+<li><p><strong>samereg</strong> (<em>boolean</em>) – if True, all lamb values are equal to lambda_max*lamb_rel, which yields the usual Lasso problem.</p></li>
+<li><p><strong>X0</strong> (<em>numpy array</em>) – initial estimation of X</p></li>
+<li><p><strong>itermax</strong> (<em>integer</em><em> (</em><em>default 1000</em><em>)</em>) – maximum number of proximal iterations</p></li>
+<li><p><strong>tol</strong> (<em>float</em><em> (</em><em>default 1e-6</em><em>)</em>) – relative error threshold for stopping the algorithm</p></li>
+<li><p><strong>verbose</strong> (<em>boolean</em><em> (</em><em>default True</em><em>)</em>) – Set to False to remove prints</p></li>
+<li><p><strong>warning</strong> (<em>boolean</em><em> (</em><em>default False</em><em>)</em>) – If True, will prompt a warning when the final estimation before debiaising is sparser than the desired sparsity level.</p></li>
+<li><p><strong>return_old</strong> (<em>boolean</em><em> (</em><em>default False</em><em>)</em>) – If True, adds a fith output which is the estimated X before debiaising</p></li>
+<li><p><strong>eta</strong> (<em>float</em><em> (</em><em>default None</em><em>)</em>) – the stepsize for ISTA. If None, the Lipschitz constant is computed and used.</p></li>
+<li><p><strong>DtD</strong> (<em>numpy arrays</em>) – pre-computed cross products of the inputs if available.</p></li>
+<li><p><strong>(</strong><strong>..</strong><strong>)</strong> (<em>BtB</em>) – pre-computed cross products of the inputs if available.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><ul class="simple">
+<li><p><strong>X</strong> (<em>numpy array</em>) – estimated X</p></li>
+<li><p><strong>e</strong> (<em>list</em>) – fittings along iterations</p></li>
+<li><p><strong>rec</strong> (<em>list</em>) – reconstruction errors along iterations</p></li>
+<li><p><strong>support</strong> (<em>numpy array</em>) – the support of each column of X</p></li>
+</ul>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="mscode.methods.algorithms.omp">
+<code class="sig-prename descclassname">mscode.methods.algorithms.</code><code class="sig-name descname">omp</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">V</span></em>, <em class="sig-param"><span class="n">D</span></em>, <em class="sig-param"><span class="n">k</span></em><span class="sig-paren">)</span><a class="headerlink" href="#mscode.methods.algorithms.omp" title="Permalink to this definition">¶</a></dt>
+<dd><p>Orthogonal Matrix Pursuit modified, in a naive implementation.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>V</strong> (<em>numpy column vector</em>) – input data, required</p></li>
+<li><p><strong>D</strong> (<em>numpy array</em>) – input dictionary, required</p></li>
+<li><p><strong>b</strong> (<em>numpy column vector</em>) – input mixing vector, required</p></li>
+<li><p><strong>k</strong> (<em>integer</em>) – sparsity level, required</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><ul class="simple">
+<li><p><strong>x</strong> (<em>numpy column vector</em>) – estimated sparse coefficients</p></li>
+<li><p><strong>s</strong> (<em>numpy column vector</em>) – binary vector with ones at the support position of x</p></li>
+<li><p><strong>TODO</strong> (<em>write for matrix input</em>)</p></li>
+</ul>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="mscode.methods.algorithms.pseudo_trick">
+<code class="sig-prename descclassname">mscode.methods.algorithms.</code><code class="sig-name descname">pseudo_trick</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">Y</span></em>, <em class="sig-param"><span class="n">D</span></em>, <em class="sig-param"><span class="n">B</span></em>, <em class="sig-param"><span class="n">k</span></em><span class="sig-paren">)</span><a class="headerlink" href="#mscode.methods.algorithms.pseudo_trick" title="Permalink to this definition">¶</a></dt>
+<dd><p>Tries to solve the mixed sparse coding problem by looking at the distorted problem
+<span class="math notranslate nohighlight">\(min_{\|X_i\|_0\leq k} \|Y(B^T)^\dagger - DX \|_F^2\)</span>,
+which is solved in parallel, column by column, using the omp algorithm.
+As a post-processing step, a least squares fitting is done with the identified support.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>Y</strong> (<em>numpy array</em>) – Input data, required</p></li>
+<li><p><strong>D</strong> (<em>numpy array</em>) – Input dictionary, required</p></li>
+<li><p><strong>B</strong> (<em>numpy array</em>) – Input mixing matrix, required</p></li>
+<li><p><strong>k</strong> (<em>int</em>) – Sparsity level, required</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><ul class="simple">
+<li><p><strong>X</strong> (<em>numpy array</em>) – Final estimated X</p></li>
+<li><p><strong>err</strong> (<em>list</em>) – Error after each pass.</p></li>
+<li><p><strong>S</strong> (<em>numpy array</em>) – Support of the solution</p></li>
+</ul>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+<div class="section" id="module-mscode.methods.proxs">
+<span id="documentation-for-proximity-operators"></span><h2>Documentation for proximity operators<a class="headerlink" href="#module-mscode.methods.proxs" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt id="mscode.methods.proxs.HardT">
+<code class="sig-prename descclassname">mscode.methods.proxs.</code><code class="sig-name descname">HardT</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">X</span></em>, <em class="sig-param"><span class="n">k</span></em><span class="sig-paren">)</span><a class="headerlink" href="#mscode.methods.proxs.HardT" title="Permalink to this definition">¶</a></dt>
+<dd><p>Truncates to the k largest values of X columnwise, arbitrarily so if necessary. This is somewhat the proximal operator of the l0 “norm”.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="mscode.methods.proxs.SoftT">
+<code class="sig-prename descclassname">mscode.methods.proxs.</code><code class="sig-name descname">SoftT</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">x</span></em>, <em class="sig-param"><span class="n">lamb</span></em><span class="sig-paren">)</span><a class="headerlink" href="#mscode.methods.proxs.SoftT" title="Permalink to this definition">¶</a></dt>
+<dd><p>Computes the Soft-Thresholding of input vector x, with coefficient lamb</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="mscode.methods.proxs.ls_cg">
+<code class="sig-prename descclassname">mscode.methods.proxs.</code><code class="sig-name descname">ls_cg</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">Y</span></em>, <em class="sig-param"><span class="n">DtD</span></em>, <em class="sig-param"><span class="n">BtB</span></em>, <em class="sig-param"><span class="n">Xinit</span></em>, <em class="sig-param"><span class="n">rho</span></em>, <em class="sig-param"><span class="n">itercg</span><span class="o">=</span><span class="default_value">50</span></em><span class="sig-paren">)</span><a class="headerlink" href="#mscode.methods.proxs.ls_cg" title="Permalink to this definition">¶</a></dt>
+<dd><p>Solves linear systems of the form</p>
+<blockquote>
+<div><p><span class="math notranslate nohighlight">\((D^TD X B^TB + \rho X) = Y\)</span></p>
+</div></blockquote>
+<p>using conjugate gradient. The important point is that the large mixing matrix (DtD otimes BtB + rho I) is never formed explicitely. However the DtD matrix is formed, as in the other methods.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>Y</strong> (<em>numpy array</em>) – Input data. It corresponds to DtYB + rho (Z - mu) in ADMM.</p></li>
+<li><p><strong>DtD</strong> (<em>numpy array</em>) – dictionary</p></li>
+<li><p><strong>BBt</strong> (<em>numpy array</em>) – mixing matrix</p></li>
+<li><p><strong>Xinit</strong> (<em>numpy array</em>) – current estimate for the coefficients X</p></li>
+<li><p><strong>rho</strong> (<em>float</em>) – parameter of the ADMM</p></li>
+<li><p><strong>itercg</strong> (<em>int</em><em> (</em><em>default 50</em><em>)</em>) – maximum number of conjugate gradient iterations</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><ul class="simple">
+<li><p><strong>X</strong> (<em>numpy array</em>) – estimated least squares solution</p></li>
+<li><p><strong>out</strong> (<em>internal output</em>)</p></li>
+</ul>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="mscode.methods.proxs.ls_kn_supp">
+<code class="sig-prename descclassname">mscode.methods.proxs.</code><code class="sig-name descname">ls_kn_supp</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">Y</span></em>, <em class="sig-param"><span class="n">D</span></em>, <em class="sig-param"><span class="n">B</span></em>, <em class="sig-param"><span class="n">S</span></em>, <em class="sig-param"><span class="n">k</span></em>, <em class="sig-param"><span class="n">nonnegative</span><span class="o">=</span><span class="default_value">False</span></em><span class="sig-paren">)</span><a class="headerlink" href="#mscode.methods.proxs.ls_kn_supp" title="Permalink to this definition">¶</a></dt>
+<dd><p>Solves the mixed sparse coding problem once the support has been fixed. This is a least-squares problem with a lot of structure, so let’s be careful not to waste too much computation time. If the support is large, better not to use this function as it will form a k**2 * r**2 system</p>
+<p>We solve a linear system <span class="math notranslate nohighlight">\(M^T y = M^T M z\)</span> where
+<span class="math notranslate nohighlight">\(M = [D_{S_1} \odot b_1, \ldots, D_{S_i} \odot b_i, \ldots]\)</span>
+which is yields the unique solution to the overcomplete least squares problem
+<span class="math notranslate nohighlight">\(\min_z \| y - Mz \|_2^2\)</span>. We use the structure of M to compute <span class="math notranslate nohighlight">\(M^T y\)</span> and <span class="math notranslate nohighlight">\(M^T M\)</span>.</p>
+<p>Can also handle nonnegative least squares with scipy nnls active set solver.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>Y</strong> (<em>numpy array</em>) – input data, required</p></li>
+<li><p><strong>D</strong> (<em>numpy array</em>) – input dictionary (fat), required</p></li>
+<li><p><strong>B</strong> (<em>numpy array</em>) – input mixing matrix, required</p></li>
+<li><p><strong>S</strong> (<em>list of list of integers</em><em> (or </em><em>numpy array</em><em>)</em>) – Known support for each column of the solution, required
+example: [[0,3],[1,3]] means columns one has support S_1 = {0,3} and column 2 has support S_2={1,3}.</p></li>
+<li><p><strong>k</strong> (<em>integer</em>) – Sparsity level, must be the number of terms in each subset of S (not checked)</p></li>
+<li><p><strong>nonnegative</strong> (<em>boolean</em>) – Default to False. Set to True to impose nonnegativity constraints on the solution, the NNLS solver is active set from scipy.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><ul class="simple">
+<li><p><strong>X</strong> (<em>numpy array</em>) – Solution of the mixed sparse coding problem with fixed column sparsity</p></li>
+<li><p><strong>err</strong> (<em>float</em>) – Reconstruction error / residuals.</p></li>
+</ul>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="mscode.methods.proxs.ml1">
+<code class="sig-prename descclassname">mscode.methods.proxs.</code><code class="sig-name descname">ml1</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">X</span></em><span class="sig-paren">)</span><a class="headerlink" href="#mscode.methods.proxs.ml1" title="Permalink to this definition">¶</a></dt>
+<dd><p>Computes the induced matrix l1 norm of X</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="mscode.methods.proxs.prox_ml1">
+<code class="sig-prename descclassname">mscode.methods.proxs.</code><code class="sig-name descname">prox_ml1</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">X</span></em>, <em class="sig-param"><span class="n">lamb</span></em>, <em class="sig-param"><span class="n">tol</span><span class="o">=</span><span class="default_value">1e-10</span></em><span class="sig-paren">)</span><a class="headerlink" href="#mscode.methods.proxs.prox_ml1" title="Permalink to this definition">¶</a></dt>
+<dd><p>Computes the proximal operator of the matrix induced l1 norm.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>X</strong> (<em>numpy array</em>) – input of the proximal operator</p></li>
+<li><p><strong>lamb</strong> (<em>float</em>) – regularization parameter</p></li>
+<li><p><strong>tol</strong> (<em>float</em>) – small tolerance on the value of the maximal columnwise 1 norm</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><ul class="simple">
+<li><p><strong>U</strong> (<em>numpy array</em>) – the proximal operator applied to X</p></li>
+<li><p><strong>t</strong> (<em>float</em>) – maximum l1 norm of the columns of U</p></li>
+<li><p><strong>nu_t</strong> (<em>list of floats</em>) – optimal dual parameters</p></li>
+<li><p><em>Credits to Jeremy E. Cohen</em></p></li>
+<li><p><strong>Reference</strong> (<em>“Computing the proximal operator of the l1 induced matrix norm, J.E.Cohen, arxiv:2005.06804v2”.</em>)</p></li>
+</ul>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="mscode.methods.proxs.prox_ml1_fast">
+<code class="sig-prename descclassname">mscode.methods.proxs.</code><code class="sig-name descname">prox_ml1_fast</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">X</span></em>, <em class="sig-param"><span class="n">lamb</span></em><span class="sig-paren">)</span><a class="headerlink" href="#mscode.methods.proxs.prox_ml1_fast" title="Permalink to this definition">¶</a></dt>
+<dd><p>A faster proximal operator algorithm for l1infty norm, exact after a few steps.</p>
+<p>Reference:
+The fastest l1oo prox in the west, Benjamin Bejar, Ivan Dokmanic and Rene Vidal, 2019</p>
+<p>Note: This is simply a wrapper for their code.</p>
+<p>Be careful of the following bug: if X is an integer array, the output will always be 0.</p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-mscode.utils.generator">
+<span id="documentation-for-generating-data"></span><h2>Documentation for generating data<a class="headerlink" href="#module-mscode.utils.generator" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt id="mscode.utils.generator.gen_mix">
+<code class="sig-prename descclassname">mscode.utils.generator.</code><code class="sig-name descname">gen_mix</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">dims</span></em>, <em class="sig-param"><span class="n">k</span></em>, <em class="sig-param"><span class="n">snr</span><span class="o">=</span><span class="default_value">20</span></em>, <em class="sig-param"><span class="n">distr</span><span class="o">=</span><span class="default_value">'Gaussian'</span></em>, <em class="sig-param"><span class="n">cond</span><span class="o">=</span><span class="default_value">1</span></em>, <em class="sig-param"><span class="n">cond_rand</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">decrease_coeff</span><span class="o">=</span><span class="default_value">0.7</span></em><span class="sig-paren">)</span><a class="headerlink" href="#mscode.utils.generator.gen_mix" title="Permalink to this definition">¶</a></dt>
+<dd><p>Generates simulated dataset for experiments according to the mixed sparse coding model.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>dims</strong> (<em>list of length 4</em>) – [m, n, d, r]</p></li>
+<li><p><strong>k</strong> (<em>integer</em>) – sparsity constraint</p></li>
+<li><p><strong>snr</strong> (<em>integer</em>) – signal to noise ratio, controls noise level</p></li>
+<li><p><strong>distr</strong> (<em>string</em>) – Default is ‘Gaussian’, but ‘Uniform’ also works. ‘Decreasing’ is Gaussian D,B and Uniform X with artificially decreasing weights for X.</p></li>
+<li><p><strong>cond</strong> (<em>float</em>) – Controls the conditionning of the B matrix</p></li>
+<li><p><strong>cond_rand</strong> (<em>boolean</em>) – If True, the singular values of a random gaussian matrix are scaled by cond. If False, the singular values are linearly spaced and conditionning is indeed cond.</p></li>
+<li><p><strong>decrease_coeff</strong> (<em>float</em><em> (</em><em>default 0.7</em><em>)</em>) – In the ‘Decreasing setup’, multiplicative factor for decrease</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><ul class="simple">
+<li><p><strong>Y</strong> (<em>nd numpy array</em>) – noised data</p></li>
+<li><p><strong>Ytrue</strong> (<em>nd numpy array</em>) – noiseless data</p></li>
+<li><p><strong>D</strong> (<em>nd numpy array</em>) – dictionary normalized columnswise in l2 norm</p></li>
+<li><p><strong>B</strong> (<em>nd numpy array</em>) – mixing matrix</p></li>
+<li><p><strong>X</strong> (<em>nd numpy array</em>) – true unknown sparse coefficients</p></li>
+<li><p><strong>S</strong> (<em>nd numpy array</em>) – support of X</p></li>
+<li><p><strong>sig</strong> (<em>float</em>) – noise variance used in practice</p></li>
+<li><p><strong>condB</strong> (<em>float</em>) – the true conditionning of B</p></li>
+</ul>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="mscode.utils.generator.gen_mix_tensor">
+<code class="sig-prename descclassname">mscode.utils.generator.</code><code class="sig-name descname">gen_mix_tensor</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">dims</span></em>, <em class="sig-param"><span class="n">dims_D</span></em>, <em class="sig-param"><span class="n">k</span></em>, <em class="sig-param"><span class="n">snr</span><span class="o">=</span><span class="default_value">20</span></em>, <em class="sig-param"><span class="n">distr</span><span class="o">=</span><span class="default_value">'Gaussian'</span></em>, <em class="sig-param"><span class="n">cond</span><span class="o">=</span><span class="default_value">1</span></em>, <em class="sig-param"><span class="n">cond_rand</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">decrease_coeff</span><span class="o">=</span><span class="default_value">0.7</span></em><span class="sig-paren">)</span><a class="headerlink" href="#mscode.utils.generator.gen_mix_tensor" title="Permalink to this definition">¶</a></dt>
+<dd><p>Generates simulated dataset for experiments according to the mixed sparse coding model.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>dims</strong> (<em>list</em>) – [m, n, l]
+#todo: implement for arbriratry order</p></li>
+<li><p><strong>dims_D</strong> (<em>list with the number of atoms and rank</em>) – [d, r]</p></li>
+<li><p><strong>k</strong> (<em>integer</em>) – sparsity constraint</p></li>
+<li><p><strong>snr</strong> (<em>integer</em>) – signal to noise ratio, controls noise level</p></li>
+<li><p><strong>distr</strong> (<em>string</em>) – Default is ‘Gaussian’, but ‘Uniform’ also works. ‘Decreasing’ is Gaussian D,B and Uniform X with artificially decreasing weights for X.</p></li>
+<li><p><strong>cond</strong> (<em>float</em>) – Controls the conditionning of the B matrix</p></li>
+<li><p><strong>cond_rand</strong> (<em>boolean</em>) – If True, the singular values of a random gaussian matrix are scaled by cond. If False, the singular values are linearly spaced and conditionning is indeed cond.</p></li>
+<li><p><strong>decrease_coeff</strong> (<em>float</em><em> (</em><em>default 0.7</em><em>)</em>) – In the ‘Decreasing setup’, multiplicative factor for decrease</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><ul class="simple">
+<li><p><strong>Y</strong> (<em>nd numpy array</em>) – noised data</p></li>
+<li><p><strong>Ytrue</strong> (<em>nd numpy array</em>) – noiseless data</p></li>
+<li><p><strong>D</strong> (<em>nd numpy array</em>) – dictionary normalized columnswise in l2 norm</p></li>
+<li><p><strong>B</strong> (<em>nd numpy array</em>) – mixing matrix</p></li>
+<li><p><strong>X</strong> (<em>nd numpy array</em>) – true unknown sparse coefficients</p></li>
+<li><p><strong>S</strong> (<em>nd numpy array</em>) – support of X</p></li>
+<li><p><strong>sig</strong> (<em>float</em>) – noise variance used in practice</p></li>
+<li><p><strong>condB</strong> (<em>float</em>) – the true conditionning of B</p></li>
+</ul>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="mscode.utils.generator.initialize">
+<code class="sig-prename descclassname">mscode.utils.generator.</code><code class="sig-name descname">initialize</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">dims</span></em>, <em class="sig-param"><span class="n">distr</span><span class="o">=</span><span class="default_value">'Gaussian'</span></em><span class="sig-paren">)</span><a class="headerlink" href="#mscode.utils.generator.initialize" title="Permalink to this definition">¶</a></dt>
+<dd><p>Provides an initial guess for X in the mixed sparse coding problem given dimensions are an elementwise standard distribution.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>dims</strong> (<em>list</em>) – [d,r], where d is the dictionary size, and r the mixing size</p></li>
+<li><p><strong>distr</strong> (<em>string</em>) – “Gaussian”, “Uniform”, “Zeros”</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><strong>X</strong> – Initial guess for Mixed Sparse Coding</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>numpy array</p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+<div class="section" id="module-mscode.utils.utils">
+<span id="documentation-for-useful-scripts"></span><h2>Documentation for useful scripts<a class="headerlink" href="#module-mscode.utils.utils" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt id="mscode.utils.utils.count_support">
+<code class="sig-prename descclassname">mscode.utils.utils.</code><code class="sig-name descname">count_support</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">Strue</span></em>, <em class="sig-param"><span class="n">Sest</span></em><span class="sig-paren">)</span><a class="headerlink" href="#mscode.utils.utils.count_support" title="Permalink to this definition">¶</a></dt>
+<dd><p>Counts the number of corrected estimated atoms</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>Strue</strong> (<em>list of list</em><em> (or </em><em>numpy nd array</em><em>)</em>) – True support</p></li>
+<li><p><strong>Sest</strong> (<em>list of list</em><em> (or </em><em>numpy nd array</em><em>)</em>) – Estimated support</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><strong>score</strong> – Percentage of correctly estimated atoms</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="mscode.utils.utils.find_lambda">
+<code class="sig-prename descclassname">mscode.utils.utils.</code><code class="sig-name descname">find_lambda</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">dims</span></em>, <em class="sig-param"><span class="n">grid</span></em>, <em class="sig-param"><span class="n">ista_type</span></em><span class="sig-paren">)</span><a class="headerlink" href="#mscode.utils.utils.find_lambda" title="Permalink to this definition">¶</a></dt>
+<dd><p>Finds a good lambda value by running a fixed (Mixed) Lasso problem of fixed size with varying regularization.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>dims</strong> (<em>list</em>) – (m,n,d,k,r,SNR,cond)</p></li>
+<li><p><strong>grid</strong> (<em>list</em>) – tested lambda values</p></li>
+<li><p><strong>ista_type</strong> (<em>string</em>) – choose between ‘Fista’, ‘Fista_m’ and ‘Fista_nn’</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><strong>lamb</strong> – estimated good regularization ratio</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="mscode.utils.utils.redundance_count">
+<code class="sig-prename descclassname">mscode.utils.utils.</code><code class="sig-name descname">redundance_count</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">S</span></em><span class="sig-paren">)</span><a class="headerlink" href="#mscode.utils.utils.redundance_count" title="Permalink to this definition">¶</a></dt>
+<dd><p>Checks how many times the same columns are chosen in various support.
+Gives the total of repeated columns with multiplicities.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>S</strong> (<em>list of list</em><em> or </em><em>numpy array</em>) – Support</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><strong>out</strong> – Number of repeated columns</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+</div>
+<div class="section" id="internal-links">
+<h1>Internal links<a class="headerlink" href="#internal-links" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p><a class="reference internal" href="py-modindex.html"><span class="std std-ref">Module Index</span></a></p></li>
+</ul>
+</div>
+
+
+              </div>
+              
+        
+            <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+</div>
+        
+        </div>
+    </div>
+    <footer class="footer">
+    <div class="container">
+      <p>
+        
+          By Jeremy E. Cohen<br/>
+        
+            &copy; Copyright 2021, Jeremy E. Cohen.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>

@@ -9,7 +9,7 @@ pip install . -r requirements.txt
 
 The full documentation is available under doc/build/html/index.html
 
-It contains implementations of several algorithms to solve the Mixed Sparse Coding problem as described in "Dictionary-based low-rank approximation and the mixed sparse coding problem", Jeremy E. Cohen, 2021, [arxiv link](arxivxxx). Please cite this reference if you use this package.
+It contains implementations of several algorithms to solve the Mixed Sparse Coding problem as described in "Dictionary-based low-rank approximation and the mixed sparse coding problem", Jeremy E. Cohen, 2021, [arxiv link](https://arxiv.org/abs/2111.12399). Please cite this reference if you use this package.
 
 It also contains the numerical results of the Mixed Sparse Coding experiments from the above reference stored as pandas dataframes, figures plotted from these data, and the script to reproduce these results. To run these scripts, set the root to ./mscode/xp/ and run
 `python xxx.py`

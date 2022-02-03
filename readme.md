@@ -19,4 +19,8 @@ This repository also includes a copy of the prox-l1oo distributed at this reposi
 https://github.com/bbejar/prox-l1oo
 and which was developped in Bejar, Benjamin, Ivan Dokmanic, and Rene Vidal. "The fastest L1, oo prox in the west." IEEE transactions on pattern analysis and machine intelligence (2021).
 
+## Known issues
+
+Currently, you need to modify the file `prox_ind_l1_norm.py` to add the path to libprox.so in your computer. Moreover, the python wrapper for this C code does not work apparently on Windows.
+
 credits: J.E.Cohen, 2021

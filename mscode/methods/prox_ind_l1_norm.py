@@ -27,24 +27,25 @@ class Matrix(ctypes.Structure):
 # ============================================================================
 
 # load library for computing the proximal operator
-lib = ctypes.cdll.LoadLibrary('/home/jecohen/Travail/Ecriture-Projets/2021/DCPD_part1_MixtureSparseCoding/Mixed_Sparse_coding/ms-code/mscode/methods/libprox.so')
+#lib = ctypes.cdll.LoadLibrary('/home/jecohen/Travail/Ecriture-Projets/2021/DCPD_part1_MixtureSparseCoding/Mixed_Sparse_coding/mscode/mscode/methods/libprox.so')
 # Todo: set as parameter
+# Todo: does not work on windows, disabling this function for now
 
 # proximal operator
-prox_l1 = lib.prox_l1_norm_column_sort
+#prox_l1 = lib.prox_l1_norm_column_sort
 
 # wrapper for the proximal operator
 def prox_l1inf(V,X,LAMBDA):
 
-    # get data dimensions
-    n,m = V.shape
+    ## get data dimensions
+    #n,m = V.shape
 
-    # create matrix object
-    Mx  = Matrix(X.ctypes.data_as(POINTER(ctypes.c_double)),n,m)
-    Mv  = Matrix(V.ctypes.data_as(POINTER(ctypes.c_double)),n,m)
+    ## create matrix object
+    #Mx  = Matrix(X.ctypes.data_as(POINTER(ctypes.c_double)),n,m)
+    #Mv  = Matrix(V.ctypes.data_as(POINTER(ctypes.c_double)),n,m)
 
-    # call proximal operator (result in X)
-    prox_l1(byref(Mx),byref(Mv),ctypes.c_double(LAMBDA))
+    ## call proximal operator (result in X)
+    #prox_l1(byref(Mx),byref(Mv),ctypes.c_double(LAMBDA))
 
 
 # ============================================================================

@@ -79,6 +79,8 @@ def gen_mix(dims, k, snr=20, distr='Gaussian', cond=1, cond_rand=False, decrease
         else:
             s = np.linspace(1, 1/cond, r)
         B = u[:, :r]@np.diag(s)@v.T
+    else:
+        s = [1,1]
 
     # X k-sparse columnwise generation
     X = np.zeros([d, r])

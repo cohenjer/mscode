@@ -70,14 +70,15 @@ def gen_mix(dims, k, snr=20, distr='Gaussian', cond=1, cond_rand=False, decrease
         D[:, i] = D[:, i]/np.linalg.norm(D[:, i])
 
     # add poor B conditionning
-    u, s, v = np.linalg.svd(B)
-    if cond_rand:
-        a = (s[0] - s[-1]/100)/(s[0]-s[-1])
-        b = s[0] - a*s[0]
-        s = a*s + b  # conditionning is exactly 100, sv are linearly spaced
-    else:
-        s = np.linspace(1, 1/cond, r)
-    B = u[:, :r]@np.diag(s)@v.T
+    if cond:
+        u, s, v = np.linalg.svd(B)
+        if cond_rand:
+            a = (s[0] - s[-1]/100)/(s[0]-s[-1])
+            b = s[0] - a*s[0]
+            s = a*s + b  # conditionning is exactly 100, sv are linearly spaced
+        else:
+            s = np.linspace(1, 1/cond, r)
+        B = u[:, :r]@np.diag(s)@v.T
 
     # X k-sparse columnwise generation
     X = np.zeros([d, r])

@@ -46,6 +46,7 @@ def prox_l1inf(V,X,LAMBDA):
 
     ## call proximal operator (result in X)
     #prox_l1(byref(Mx),byref(Mv),ctypes.c_double(LAMBDA))
+    return
 
 
 # ============================================================================

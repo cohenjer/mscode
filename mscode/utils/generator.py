@@ -57,7 +57,7 @@ def gen_mix(dims, k, snr=20, distr='Gaussian', cond=1, cond_rand=False, decrease
     '''
     m, n, d, r = dims
 
-    if distr == 'Gaussian' or 'Decreasing':
+    if distr == ('Gaussian' or 'Decreasing'):
         D = np.random.randn(n, d)
         B = np.random.randn(m, r)
     elif distr == 'Uniform':
@@ -175,7 +175,7 @@ def gen_mix_tensor(dims, dims_D, k, snr=20, distr='Gaussian', cond=1, cond_rand=
     n,m,l = dims
     d, r = dims_D
 
-    if distr == 'Gaussian' or 'Decreasing':
+    if distr == ('Gaussian' or 'Decreasing'):
         D = np.random.randn(n, d)
         B = np.random.randn(m, r)
         C = np.random.randn(l, r)

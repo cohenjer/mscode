@@ -1,6 +1,7 @@
 numpy
 scipy
 matplotlib
-pandas
-plotly
 tensorly
+
+# Optional, uncomment for running xps
+# plotly, pandas

@@ -1,6 +1,5 @@
 import numpy as np
 from scipy.optimize import nnls
-from numpy.matlib import repmat as repmat
 from mscode.methods.prox_ind_l1_norm import prox_l1inf
 
 def ml1(X):
@@ -290,7 +289,7 @@ def prox_ml1(X, lamb, tol=1e-10):
         Xcumsum_t = (Xcumsum[:, I]-t)/lamb
 
         # Compute the candidate nu values
-        Ps = np.transpose(repmat(ps, l, 1))  # matrix of sequences from 1 to n in with i columns
+        Ps = np.transpose(np.tile(ps, (l, 1)))  # matrix of sequences from 1 to n in with i columns
         nu = Xcumsum_t/Ps
 
         nu_t = np.zeros(m)

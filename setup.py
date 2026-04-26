@@ -7,7 +7,7 @@ setuptools.setup(
       version='0.0',
       description='Code for Mixed Sparse Coding',
       author='Jeremy E. Cohen',
-      author_email='jeremy.cohen@irisa.fr',
+      author_email='jeremy.cohen@cnrs.fr',
       packages=setuptools.find_packages(),
       license='MIT'
      )

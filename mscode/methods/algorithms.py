@@ -74,8 +74,8 @@ def admm_mix(Y, D, B, k, X0=None, itermax=1000, tol=1e-6, verbose=True, rho=None
 
     # Initial error
     e0 = (np.linalg.norm(Y - D@X@Bt, 'fro') ** 2)/2
-    e = [np.Inf, e0]
-    err_Z = [np.Inf]
+    e = [np.inf, e0]
+    err_Z = [np.inf]
 
     # Initial iteration count
     iter = 0
@@ -227,7 +227,7 @@ def ista_mix(Y, D, B, lamb_rel, k=None, X0=None, itermax=1000, tol=1e-6, verbose
     e0 = rec0**2/2 + lamb*ml1(X)
     # e_old = 0
     rec = [rec0]
-    e = [np.Inf, e0]
+    e = [np.inf, e0]
 
     # Initial iteration count
     iter = 0
@@ -405,7 +405,7 @@ def ista(Y, D, B, lamb_rel, k=None, X0=None, itermax=1000, tol=1e-6, verbose=Tru
     e0 = rec0**2/2 + np.sum(lamb*np.sum(np.abs(X), axis=0))
     # e_old = 0
     rec = [rec0]
-    e = [np.Inf, e0]
+    e = [np.inf, e0]
 
     # Initial iteration count
     iter = 0
@@ -593,7 +593,7 @@ def ista_nn(Y, D, B, lamb_rel, k=None, X0=None, itermax=1000, tol=1e-6, verbose=
     e0 = rec0**2/2 + np.sum(lamb*np.sum(np.abs(X), axis=0))
     # e_old = 0
     rec = [rec0]
-    e = [np.Inf, e0]
+    e = [np.inf, e0]
 
     # Initial iteration count
     iter = 0
@@ -733,7 +733,7 @@ def iht_mix(Y, D, B, k , X_in, tol=1e-6, itermax=1000, verbose=False, DtD=None, 
     if verbose:
         print('IHT stepsize is fixed to ', step)
     err = np.linalg.norm(Y - D@X@Bt, 'fro')
-    err = [np.Inf, err]
+    err = [np.inf, err]
 
     #Fast version
     Z = np.copy(X)
@@ -833,7 +833,7 @@ def homp(Y, D, B, k, Xin=None, tol=1e-6, itermax=1000):
     # Supports in list of list format (col per col)
     Slist = [[0 for i in range(k)] for j in range(r)]
     err = np.linalg.norm(Y-D@X@B.T, 'fro')
-    err = [np.Inf, err]
+    err = [np.inf, err]
     #itermax = 50
     it = 0
 

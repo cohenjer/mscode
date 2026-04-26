@@ -12,7 +12,7 @@ def admm_mix(Y, D, B, k, X0=None, itermax=1000, tol=1e-6, verbose=True, rho=None
     '''
     Solves (approximatively, without guaranties) the mixed sparse coding problem using ADMM with hard thresholding as the proximity operator of the l0 sparsity constraint. The problem is formulated as
 
-        :math:`\\min_X\; \\|Y - DXB\\|_F^2  \; s.t.\;   \\|X_i\\|_0 \\leq k`
+        :math:`\\min_X\\; \\|Y - DXB\\|_F^2  \\; s.t.\\;   \\|X_i\\|_0 \\leq k`
 
     where k is the maximal number of nonzeros per column of X.
 
@@ -484,7 +484,7 @@ def ista_nn(Y, D, B, lamb_rel, k=None, X0=None, itermax=1000, tol=1e-6, verbose=
     Solves a simple convex relaxation of the mixed sparse coding problem using Fast Iterative Soft Thresholding (Fista) under nonnegativity constraints. Each columns has its own regularization parameter.
     The cost function is
 
-        :math:`\\frac{1}{2} \\|Y - DXB^T \\|_F^2 + \\sum_i \\lambda_i \\|X_i\\|_{1}\; s.t.\; X\\geq 0`
+        :math:`\\frac{1}{2} \\|Y - DXB^T \\|_F^2 + \\sum_i \\lambda_i \\|X_i\\|_{1}\\; s.t.\\; X\\geq 0`
 
     where :math:`\\lambda_i = \\lambda_{rel,i}\\lambda_{\\max,i}`
 
@@ -967,7 +967,7 @@ def brute_trick(Y,D,B,k):
     '''
     _, d = D.shape
     _, r = B.shape
-    C = np.linalg.pinv(B.T);
+    C = np.linalg.pinv(B.T)
     V = Y@C
     X_trick = np.zeros([d,r])
     Slist = [[0 for i in range(k)] for j in range(r)]
